@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baldur's Gate 3 Character Build Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .quiz-container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        .question {
+            margin-bottom: 15px;
+        }
+        .question p {
+            font-weight: bold;
+        }
+        .result {
+            margin-top: 20px;
+            padding: 20px;
+            border: 1px solid #4CAF50;
+            border-radius: 10px;
+            background-color: #e8f5e9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Baldur's Gate 3 Character Build Quiz</h1>
+    <div class="quiz-container">
+        <form id="quizForm">
+            <div class="question">
+                <p>1. In a world filled with danger and mystery, how do you prefer to approach combat?</p>
+                <label><input type="radio" name="q1" value="1" required> Charging into battle with sword or axe in hand.</label><br>
+                <label><input type="radio" name="q1" value="2"> Striking from afar with a well-aimed bow or crossbow.</label><br>
+                <label><input type="radio" name="q1" value="3"> Casting powerful spells to decimate your foes.</label><br>
+                <label><input type="radio" name="q1" value="4"> Sneaking in the shadows to strike at the perfect moment.</label>
+            </div>
+
+            <div class="question">
+                <p>2. Which of these traits best describes your character's strengths in Faerûn?</p>
+                <label><input type="radio" name="q2" value="1" required> Physical strength and endurance.</label><br>
+                <label><input type="radio" name="q2" value="2"> Keen intellect and a thirst for knowledge.</label><br>
+                <label><input type="radio" name="q2" value="3"> Quick reflexes and nimbleness.</label><br>
+                <label><input type="radio" name="q2" value="4"> Charm and the ability to influence others.</label>
+            </div>
+
+            <div class="question">
+                <p>3. When faced with a difficult situation, how does your character typically respond?</p>
+                <label><input type="radio" name="q3" value="1" required> By confronting the challenge head-on with brute force.</label><br>
+                <label><input type="radio" name="q3" value="2"> By devising a clever plan to outsmart the opponent.</label><br>
+                <label><input type="radio" name="q3" value="3"> By avoiding the situation altogether, if possible.</label><br>
+                <label><input type="radio" name="q3" value="4"> By talking your way out or convincing others to see your perspective.</label>
+            </div>
+
+            <div class="question">
+                <p>4. What kind of setting does your character thrive in?</p>
+                <label><input type="radio" name="q4" value="1" required> The wild, untamed forests of Faerûn.</label><br>
+                <label><input type="radio" name="q4" value="2"> Ancient, mysterious ruins filled with secrets.</label><br>
+                <label><input type="radio" name="q4" value="3"> The lively, bustling streets of a grand city.</label><br>
+                <label><input type="radio" name="q4" value="4"> The dark, foreboding depths of dungeons.</label>
+            </div>
+
+            <div class="question">
+                <p>5. What drives your character forward on their journey?</p>
+                <label><input type="radio" name="q5" value="1" required> A sense of justice and the desire to protect the innocent.</label><br>
+                <label><input type="radio" name="q5" value="2"> The pursuit of knowledge and uncovering ancient secrets.</label><br>
+                <label><input type="radio" name="q5" value="3"> A craving for personal freedom and adventure.</label><br>
+                <label><input type="radio" name="q5" value="4"> The lure of treasure and the promise of power.</label>
+            </div>
+
+            <div class="question">
+                <p>6. Who would be your ideal companion in your travels across the Sword Coast?</p>
+                <label><input type="radio" name="q6" value="1" required> A stalwart warrior who can defend you in battle.</label><br>
+                <label><input type="radio" name="q6" value="2"> A wise mage who offers counsel and powerful magic.</label><br>
+                <label><input type="radio" name="q6" value="3"> A cunning rogue who can navigate through danger unnoticed.</label><br>
+                <label><input type="radio" name="q6" value="4"> A charismatic bard who can rally allies and sway opinions.</label>
+            </div>
+
+            <div class="question">
+                <p>7. Which race do you feel most connected to in the world of Baldur's Gate?</p>
+                <label><input type="radio" name="q7" value="1" required> Humans, adaptable and ambitious.</label><br>
+                <label><input type="radio" name="q7" value="2"> Elves, graceful and attuned to nature.</label><br>
+                <label><input type="radio" name="q7" value="3"> Dwarves, hardy and skilled craftsmen.</label><br>
+                <label><input type="radio" name="q7" value="4"> Tieflings, with their mysterious and infernal heritage.</label><br>
+                <label><input type="radio" name="q7" value="5"> Halflings, small but brave and lucky.</label><br>
+                <label><input type="radio" name="q7" value="6"> Half-Elves, blending human versatility with elven grace.</label><br>
+                <label><input type="radio" name="q7" value="7"> Githyanki, fierce warriors from another plane.</label>
+            </div>
+
+            <div class="question">
+                <p>8. Which type of weapon do you see yourself wielding most effectively?</p>
+                <label><input type="radio" name="q8" value="1" required> A powerful greatsword or warhammer.</label><br>
+                <label><input type="radio" name="q8" value="2"> A precise longbow or crossbow.</label><br>
+                <label><input type="radio" name="q8" value="3"> A staff or wand to channel magical energy.</label><br>
+                <label><input type="radio" name="q8" value="4"> Dual daggers or a short sword for swift strikes.</label><br>
+                <label><input type="radio" name="q8" value="5"> A versatile spear or a scimitar.</label>
+            </div>
+
+            <div class="question">
+                <p>9. What is your character's moral alignment?</p>
+                <label><input type="radio" name="q9" value="1" required> Lawful Good – Upholding justice and righteousness above all.</label><br>
+                <label><input type="radio" name="q9" value="2"> Neutral Good – Doing what is right without bias for or against order.</label><br>
+                <label><input type="radio" name="q9" value="3"> Chaotic Good – Acting on personal beliefs of goodness and freedom.</label><br>
+                <label><input type="radio" name="q9" value="4"> Lawful Neutral – Adhering strictly to law and order.</label><br>
+                <label><input type="radio" name="q9" value="5"> True Neutral – Maintaining balance and avoiding extremes.</label><br>
+                <label><input type="radio" name="q9" value="6"> Chaotic Neutral – Acting on whims, valuing freedom above all.</label><br>
+                <label><input type="radio" name="q9" value="7"> Lawful Evil – Using the law to achieve personal gain.</label><br>
+                <label><input type="radio" name="q9" value="8"> Neutral Evil – Doing whatever it takes to achieve goals.</label><br>
+                <label><input type="radio" name="q9" value="9"> Chaotic Evil – Embracing chaos and destruction.</label>
+            </div>
+
+            <div class="question">
+                <p>10. What background best fits your character’s history?</p>
+                <label><input type="radio" name="q10" value="1" required> Acolyte – Devoted to a deity, seeking spiritual growth.</label><br>
+                <label><input type="radio" name="q10" value="2"> Criminal – Living a life of crime, always looking for the next score.</label><br>
+                <label><input type="radio" name="q10" value="3"> Folk Hero – A local hero, celebrated for your bravery.</label><br>
+                <label><input type="radio" name="q10" value="4"> Noble – Born into wealth and privilege, accustomed to power.</label><br>
+                <label><input type="radio" name="q10" value="5"> Sage – A scholar, always in search of knowledge.</label><br>
+                <label><input type="radio" name="q10" value="6"> Soldier – A veteran of many battles, disciplined and strong.</label>
+            </div>
+
+            <button type="button" onclick="showResult()">Submit</button>
+        </form>
+        <div id="result" class="result" style="display: none;"></div>
+    </div>
+
+    <script>
+        function showResult() {
+            const form = document.getElementById('quizForm');
+            const resultDiv = document.getElementById('result');
+            const answers = new FormData(form);
+            let resultText = '';
+
+            resultText += `<p><strong>Playstyle:</strong> ${getPlaystyle(answers.get('q1'))}</p>`;
+            resultText += `<p><strong>Traits:</strong> ${getTraits(answers.get('q2'))}</p>`;
+            resultText += `<p><strong>Conflict Resolution:</strong> ${getConflictResolution(answers.get('q3'))}</p>`;
+            resultText += `<p><strong>Preferred Environment:</strong> ${getEnvironment(answers.get('q4'))}</p>`;
+            resultText += `<p><strong>Motivation:</strong> ${getMotivation(answers.get('q5'))}</p>`;
+            resultText += `<p><strong>Ideal Companion:</strong> ${getCompanion(answers.get('q6'))}</p>`;
+            resultText += `<p><strong>Race:</strong> ${getRace(answers.get('q7'))}</p>`;
+            resultText += `<p><strong>Weapon Preference:</strong> ${getWeapon(answers.get('q8'))}</p>`;
+            resultText += `<p><strong>Moral Alignment:</strong> ${getAlignment(answers.get('q9'))}</p>`;
+            resultText += `<p><strong>Background:</strong> ${getBackground(answers.get('q10'))}</p>`;
+
+            resultDiv.innerHTML = resultText;
+            resultDiv.style.display = 'block';
+        }
+
+        function getPlaystyle(value) {
+            switch (value) {
+                case '1': return 'Charging into battle with sword or axe in hand.';
+                case '2': return 'Striking from afar with a well-aimed bow or crossbow.';
+                case '3': return 'Casting powerful spells to decimate your foes.';
+                case '4': return 'Sneaking in the shadows to strike at the perfect moment.';
+                default: return '';
+            }
+        }
+
+        function getTraits(value) {
+            switch (value) {
+                case '1': return 'Physical strength and endurance.';
+                case '2': return 'Keen intellect and a thirst for knowledge.';
+                case '3': return 'Quick reflexes and nimbleness.';
+                case '4': return 'Charm and the ability to influence others.';
+                default: return '';
+            }
+        }
+
+        function getConflictResolution(value) {
+            switch (value) {
+                case '1': return 'By confronting the challenge head-on with brute force.';
+                case '2': return 'By devising a clever plan to outsmart the opponent.';
+                case '3': return 'By avoiding the situation altogether, if possible.';
+                case '4': return 'By talking your way out or convincing others to see your perspective.';
+                default: return '';
+            }
+        }
+
+        function getEnvironment(value) {
+            switch (value) {
+                case '1': return 'The wild, untamed forests of Faerûn.';
+                case '2': return 'Ancient, mysterious ruins filled with secrets.';
+                case '3': return 'The lively, bustling streets of a grand city.';
+                case '4': return 'The dark, foreboding depths of dungeons.';
+                default: return '';
+            }
+        }
+
+        function getMotivation(value) {
+            switch (value) {
+                case '1': return 'A sense of justice and the desire to protect the innocent.';
+                case '2': return 'The pursuit of knowledge and uncovering ancient secrets.';
+                case '3': return 'A craving for personal freedom and adventure.';
+                case '4': return 'The lure of treasure and the promise of power.';
+                default: return '';
+            }
+        }
+
+        function getCompanion(value) {
+            switch (value) {
+                case '1': return 'A stalwart warrior who can defend you in battle.';
+                case '2': return 'A wise mage who offers counsel and powerful magic.';
+                case '3': return 'A cunning rogue who can navigate through danger unnoticed.';
+                case '4': return 'A charismatic bard who can rally allies and sway opinions.';
+                default: return '';
+            }
+        }
+
+        function getRace(value) {
+            switch (value) {
+                case '1': return 'Humans, adaptable and ambitious.';
+                case '2': return 'Elves, graceful and attuned to nature.';
+                case '3': return 'Dwarves, hardy and skilled craftsmen.';
+                case '4': return 'Tieflings, with their mysterious and infernal heritage.';
+                case '5': return 'Halflings, small but brave and lucky.';
+                case '6': return 'Half-Elves, blending human versatility with elven grace.';
+                case '7': return 'Githyanki, fierce warriors from another plane.';
+                default: return '';
+            }
+        }
+
+        function getWeapon(value) {
+            switch (value) {
+                case '1': return 'A powerful greatsword or warhammer.';
+                case '2': return 'A precise longbow or crossbow.';
+                case '3': return 'A staff or wand to channel magical energy.';
+                case '4': return 'Dual daggers or a short sword for swift strikes.';
+                case '5': return 'A versatile spear or a scimitar.';
+                default: return '';
+            }
+        }
+
+        function getAlignment(value) {
+            switch (value) {
+                case '1': return 'Lawful Good – Upholding justice and righteousness above all.';
+                case '2': return 'Neutral Good – Doing what is right without bias for or against order.';
+                case '3': return 'Chaotic Good – Acting on personal beliefs of goodness and freedom.';
+                case '4': return 'Lawful Neutral – Adhering strictly to law and order.';
+                case '5': return 'True Neutral – Maintaining balance and avoiding extremes.';
+                case '6': return 'Chaotic Neutral – Acting on whims, valuing freedom above all.';
+                case '7': return 'Lawful Evil – Using the law to achieve personal gain.';
+                case '8': return 'Neutral Evil – Doing whatever it takes to achieve goals.';
+                case '9': return 'Chaotic Evil – Embracing chaos and destruction.';
+                default: return '';
+            }
+        }
+
+        function getBackground(value) {
+            switch (value) {
+                case '1': return 'Acolyte – Devoted to a deity, seeking spiritual growth.';
+                case '2': return 'Criminal – Living a life of crime, always looking for the next score.';
+                case '3': return 'Folk Hero – A local hero, celebrated for your bravery.';
+                case '4': return 'Noble – Born into wealth and privilege, accustomed to power.';
+                case '5': return 'Sage – A scholar, always in search of knowledge.';
+                case '6': return 'Soldier – A veteran of many battles, disciplined and strong.';
+                default: return '';
+            }
+        }
+    </script>
+</body>
+</html>
